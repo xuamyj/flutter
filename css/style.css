@@ -1,0 +1,19 @@
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h3 {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h4 {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.inactive {
+  display: none !important;
+}

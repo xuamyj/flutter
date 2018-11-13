@@ -1,4 +1,7 @@
+/* spacing and interactions */
+
 html {
+    /* for vertical centering */
     height: 100%;
 }
 
@@ -6,129 +9,83 @@ body {
     /* parent flex */
     display: flex;
     flex-direction: row;
+    background-image: url("../images/back2.png");
+    background-size: cover;
 
+    margin: 0px;
+    padding: 8px 0px 0px 0px;
+
+    /* for vertical centering */
     height: 100%;
 }
 
-nav div {
-    width: 20px;
-    height: 20px;
-    margin: 8px;
-    border-radius: 50%;
-}
-
-nav div:hover {
-    cursor: pointer;
-}
-
-article {
+#leftpage {
     /* child flex */
+    flex-basis: 0;
     flex-grow: 1;
 }
+
+#rightpage {
+    /* child flex */
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+
+/* left page */
+
+nav div {
+    /* parent flex */
+    display: flex;
+}
+
+.nav-circle {
+    margin: 4px 10px;
+}
+
+.nav-text {
+    /* parent flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* right page */
 
 section {
     /* parent flex */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    /* for vertical centering */
     height: 100%;
 }
 
-.first {
-    /* parent flex */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    /* child flex */
-    flex-basis: 0;
-    flex-grow: 1;
-
-    background-color: #E4E6E5;
-    padding: 40px;
+.logo-small {
+    margin: -60px 0px 0px 0px;
 }
 
-.second {
-    /* parent flex */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    /* child flex */
-    flex-basis: 0;
-    flex-grow: 1;
-
-    background-color: #E6EAEB;
-    padding: 40px;
+.text {
+    margin: 8px 110px;
 }
 
-section div div {
-    padding: 40px;
-}
-
-#logo {
-    max-width: 300px;
+.button {
+    margin: 8px;
 }
 
 .video {
-    padding: 10px;
+    margin: 8px;
 }
 
-.img-single {
-    padding: 10px;
+.prototype {
+    margin: 8px;
 }
 
-.img-single img {
-    max-width: 500px;
-}
 
-/* for team page */
-.img-rows {
-    /* parent flex */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
-.profile {
-    margin: 20px;
-    padding: 10px;
-}
 
-/* for accent colors */
-.color-inactive {
-    background-color: #D7D7D7;
-}
-.color-about {
-    background-color: #D3B1A5;
-}
-.color-team {
-    background-color: #97BFC9;
-}
-.color-needfinding {
-    background-color: #F7C1D8;
-}
-.color-experience {
-    background-color: #CEC99F;
-}
-.color-concept {
-    background-color: #B3D8DE;
-}
-.color-lowfi {
-    background-color: #E3CB8B;
-}
-.color-mediumfi {
-    background-color: #E7B6A5;
-}
-.color-heuristic {
-    background-color: #CDC981;
-}
-.color-hifi {
-    background-color: #F7B3BE;
-}
-.color-poster {
-    background-color: #F9D972;
-}
+
+

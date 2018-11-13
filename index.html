@@ -4,266 +4,190 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <title>flutter</title>
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/notebook.css"/>
         <script src="js/notebook.js" defer="true"></script>
     </head>
     <body>
-        <header>
-            <img src="images/flutter-logo2.png"/>
-        </header>
-        <nav>
-            <div class="nav-separate" id="about">
-                ABOUT
-            </div>
-            <div class="nav-separate" id="team">
-                TEAM
-            </div>
-            <div class="nav-regular" id="needfinding">
-                NEEDFINDING
-            </div>
-            <div class="nav-regular" id="experience">
-                EXPERIENCE PROTOTYPE
-            </div>
-            <div class="nav-regular" id="concept">
-                CONCEPT VIDEO
-            </div>
-            <div class="nav-regular" id="lowfi">
-                LOW-FI PROTOTYPE
-            </div>
-            <div class="nav-regular" id="mediumfi">
-                MEDIUM-FI PROTOTYPE
-            </div>
-            <div class="nav-regular" id="heuristic">
-                HEURISTIC EVALUATION
-            </div>
-            <div class="nav-regular" id="hifi">
-                HI-FI PROTOTYPE
-            </div>
-            <div class="nav-regular" id="poster">
-                POSTER & PITCH
-            </div>
-        </nav>
-        <article>
-            <section id="about">
-                <div class="first">
-                    <h2>
-                        ABOUT
-                    </h2>
-                    <img id="logo" src="images/flutter-logo.png"/>
-                    <h3>
-                        declutter meaningfully
-                    </h3>
-                </div>
-                <div class="second">
-                    <div class="color-about">
-                        <p>
-                            [TODO(content): describe flutter's overall purpose]
-                        </p>
+        <div id="leftpage">
+            <nav>
+                <div>
+                    <div class="nav-circle" id="nav-about">
+                    </div>
+                    <div class="nav-text" id="nav-about-text">
+                        about
                     </div>
                 </div>
+                <div>
+                    <div class="nav-circle" id="nav-needfinding">
+                    </div>
+                    <div class="nav-text" id="nav-needfinding-text">
+                        needfinding
+                    </div>
+                </div>
+                <div>
+                    <div class="nav-circle" id="nav-experience">
+                    </div>
+                    <div class="nav-text" id="nav-experience-text">
+                        experience prototype
+                    </div>
+                </div>
+                <div>
+                    <div class="nav-circle" id="nav-concept">
+                    </div>
+                    <div class="nav-text" id="nav-concept-text">
+                        concept video
+                    </div>
+                </div>
+                <div>
+                    <div class="nav-circle" id="nav-lowfi">
+                    </div>
+                    <div class="nav-text" id="nav-lowfi-text">
+                        low-fi prototype
+                    </div>
+                </div>
+                <div>
+                    <div class="nav-circle" id="nav-mediumfi">
+                    </div>
+                    <div class="nav-text" id="nav-mediumfi-text">
+                        medium-fi prototype
+                    </div>
+                </div>
+                <div>
+                    <div class="nav-circle" id="nav-heuristic">
+                    </div>
+                    <div class="nav-text" id="nav-heuristic-text">
+                        heuristic evaluation
+                    </div>
+                </div>
+                <div>
+                    <div class="nav-circle" id="nav-hifi">
+                    </div>
+                    <div class="nav-text" id="nav-hifi-text">
+                        hi-fi prototype
+                    </div>
+                </div>
+                <div>
+                    <div class="nav-circle" id="nav-poster">
+                    </div>
+                    <div class="nav-text" id="nav-poster-text">
+                        poster & pitch
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="rightpage">
+            <section id="section-main">
+                <img src="images/flutter-logo.png" class="logo-large" />
             </section>
 
-            <section id="team">
-                <div class="first">
-                    <div class="color-team">
-                        <p>
-                            [TODO(content): describe who we are as a group]
-                        </p>
-                    </div>
+            <section id="section-about">
+                <img src="images/flutter-logo.png" class="logo-small" />
+                <div class="text">
+                    [TODO(content): Flutter's overall purpose is etc.]
                 </div>
-                <div class="second">
-                    <h2>
-                        TEAM
-                    </h2>
-                    <div class="img-rows">
-                        <div class="profile color-team" id="jenny">
+                <div class="img-square">
+                    <div class="img-row">
+                        <div class="img-profile" id="chloe">
                             <img src="images/placeholder.png"/>
-                            <h4>
-                                Jenny Z
-                            </h4>
+                            <div class="caption">Chloe B.</div>
                         </div>
-                        <div class="profile color-team" id="cynthia">
+                        <div class="img-profile" id="cynthia">
                             <img src="images/placeholder.png"/>
-                            <h4>
-                                Cynthia L
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="img-rows">
-                        <div class="profile color-team" id="chloe">
-                            <img src="images/placeholder.png"/>
-                            <h4>
-                                Chloe B
-                            </h4>
-                        </div>
-                        <div class="profile color-team" id="amy">
-                            <img src="images/placeholder.png"/>
-                            <h4>
-                                Amy X
-                            </h4>
+                            <div class="caption">Cynthia L.</div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section id="needfinding">
-                <div class="first">
-                    <h2>
-                        NEEDFINDING
-                    </h2>
-                    <div class="img-single color-needfinding">
-                        <img src="images/need.jpg"/>
-                    </div>
-                </div>
-                <div class="second">
-                    <div class="color-needfinding">
-                        <p>
-                            [TODO(content): add Needfinding documentation, part 2]
-                        </p>
+                    <div class="img-row">
+                        <div class="img-profile" id="amy">
+                            <img src="images/placeholder.png"/>
+                            <div class="caption">Amy X.</div>
+                        </div>
+                        <div class="img-profile" id="jenny">
+                            <img src="images/placeholder.png"/>
+                            <div class="caption">Jenny Z.</div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="experience">
-                <div class="first">
-                    <h2>
-                        EXPERIENCE PROTOTYPE
-                    </h2>
-                    <div class="color-experience">
-                        <p>
-                            [TODO(content): add Experience Prototype documentation, part 1]
-                        </p>
-                    </div>
+            <section id="section-needfinding">
+                <img src="images/flutter-logo.png" class="logo-small" />
+                <div class="text">
+                    [TODO(content): This eventually will be a thoughtful sentence about what we did for needfinding. Actually, there will be multiple sentences. Apple pie bear claw candy canes icing wafer dessert powder carrot cake soufflé. Dragée jelly-o wafer liquorice donut marzipan muffin oat cake. Lemon drops pie jujubes marzipan. Marshmallow gingerbread donut.]
                 </div>
-                <div class="second">
-                    <div class="color-experience">
-                        <p>
-                            [TODO(content): add Experience Prototype documentation, part 2]
-                        </p>
-                    </div>
-                </div>
+                <a href="files/needfinding-pres.pdf" class="button">
+                    VIEW PRESENTATION
+                </a>
             </section>
 
-            <section id="concept">
-                <div class="first">
-                    <h2>
-                        CONCEPT VIDEO
-                    </h2>
-                    <div class="color-concept">
-                        <p>
-                            [TODO(content): add Concept Video documentation, part 1]
-                        </p>
-                    </div>
+            <section id="section-experience">
+                <img src="images/flutter-logo.png" class="logo-small" />
+                <div class="text">
+                    [TODO(content): This eventually will be a sentence describing what we did for experience prototypes. Actually, there will be multiple sentences. Caramels croissant liquorice dragée dessert cupcake fruitcake gummies. Dragée candy canes oat cake donut jujubes dragée tiramisu. Sweet icing bonbon tiramisu pudding jelly-o gingerbread cake gingerbread. Jelly beans muffin cake bear claw liquorice.]
                 </div>
-                <div class="second">
-                    <div class="video color-concept">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6vTzRwOeLyg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                </div>
+                <a href="files/experience-pres.pdf" class="button">
+                    VIEW PRESENTATION
+                </a>
+                <a href="files/experience-writeup.pdf" class="button">
+                    READ WRITEUP
+                </a>
             </section>
 
-            <section id="lowfi">
-                <div class="first">
-                    <h2>
-                        LOW-FI PROTOTYPE
-                    </h2>
-                    <div class="color-lowfi">
-                        <p>
-                            [TODO(content): add Low-Fi Prototype documentation, part 1]
-                        </p>
-                    </div>
+            <section id="section-concept">
+                <img src="images/flutter-logo.png" class="logo-small" />
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6vTzRwOeLyg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
-                <div class="second">
-                    <div class="color-lowfi">
-                        <p>
-                            [TODO(content): add Low-Fi Prototype documentation, part 2]
-                        </p>
-                    </div>
-                </div>
+                <a href="files/concept-pres.pdf" class="button">
+                    VIEW PRESENTATION
+                </a>
             </section>
 
-            <section id="mediumfi">
-                <div class="first">
-                    <h2>
-                        MEDIUM-FI PROTOTYPE
-                    </h2>
-                    <div class="color-mediumfi">
-                        <p>
-                            [TODO(content): add Medium-fi Prototype documentation, part 1]
-                        </p>
-                    </div>
+            <section id="section-lowfi">
+                <img src="images/flutter-logo.png" class="logo-small" />
+                <div class="text">
+                    [TODO(content): This eventually will talk about our lowfi prototype and everything we did related to it. Actually, there will be multiple sentences. Dessert macaroon macaroon apple pie candy wafer cake. Toffee dessert croissant topping halvah candy chocolate cake fruitcake dragée. Halvah soufflé dessert gummies chocolate bar chocolate cake. Bear claw halvah fruitcake apple pie gummies.]
                 </div>
-                <div class="second">
-                    <div class="color-mediumfi">
-                        <p>
-                            [TODO(content): add Medium-fi Prototype documentation, part 2]
-                        </p>
-                    </div>
-                </div>
+                <a href="files/lowfi-pres.pdf" class="button">
+                    VIEW PRESENTATION
+                </a>
+                <a href="files/lowfi-writeup.pdf" class="button">
+                    READ WRITEUP
+                </a>
             </section>
 
-            <section id="heuristic">
-                <div class="first">
-                    <h2>
-                        HEURISTIC EVALUATION
-                    </h2>
-                    <div class="color-heuristic">
-                        <p>
-                            [TODO(content): add Heuristic Evaluation documentation, part 1]
-                        </p>
-                    </div>
+            <section id="section-mediumfi">
+                <img src="images/flutter-logo.png" class="logo-small" />
+                <div class="prototype">
+                    <iframe style="border: none;" height="350" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FZ517zw6ldXhsGSbWJ7U6DdNA%2FMed-Fi-Flutter%3Fnode-id%3D1%253A3%26scaling%3Dscale-down" allowfullscreen></iframe>
                 </div>
-                <div class="second">
-                    <div class="color-heuristic">
-                        <p>
-                            [TODO(content): add Heuristic Evaluation documentation, part 2]
-                        </p>
-                    </div>
-                </div>
+                <a href="files/mediumfi-pres.pdf" class="button">
+                    VIEW PRESENTATION
+                </a>
+                <a href="files/mediumfi-readme.pdf" class="button">
+                    VIEW README
+                </a>
             </section>
 
-            <section id="hifi">
-                <div class="first">
-                    <h2>
-                        HI-FI PROTOTYPE
-                    </h2>
-                    <div class="color-hifi">
-                        <p>
-                            [TODO(content): add Hi-fi Prototype documentation, part 1]
-                        </p>
-                    </div>
+            <section id="section-heuristic">
+                <img src="images/flutter-logo.png" class="logo-small" />
+                <div class="text">
+                    [TODO(content): Eventually we'll write a sentence about the heuristic evaluation process and etc. Actually, there will be multiple sentences. Bonbon sugar plum halvah gingerbread icing gummi bears pie. Jujubes pastry tootsie roll marshmallow caramels tart candy cookie chocolate bar. Jelly-o gummies donut lemon drops brownie.]
                 </div>
-                <div class="second">
-                    <div class="color-hifi">
-                        <p>
-                            [TODO(content): add Hi-fi Prototype documentation, part 2]
-                        </p>
-                    </div>
-                </div>
+                <a href="files/lowfi-pres.pdf" class="button">
+                    READ HEURISTIC EVALUATION
+                </a>
             </section>
 
-            <section id="poster">
-                <div class="first">
-                    <h2>
-                        POSTER & PITCH
-                    </h2>
-                    <div class="color-poster">
-                        <p>
-                            [TODO(content): add Poster & Pitch documentation, part 1]
-                        </p>
-                    </div>
-                </div>
-                <div class="second">
-                    <div class="color-poster">
-                        <p>
-                            [TODO(content): add Poster & Pitch documentation, part 2]
-                        </p>
-                    </div>
-                </div>
+            <section id="section-hifi">
             </section>
-        </article>
+
+            <section id="section-poster">
+            </section>
+        </div>
     </body>
 </html>

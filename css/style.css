@@ -1,19 +1,90 @@
-h2 {
-    font-family: 'IBM Plex Sans', sans-serif;
-}
+/* fonts, colors, and logo */
 
-h3 {
-    font-family: 'IBM Plex Mono', monospace;
-}
-
-h4 {
-    font-family: 'IBM Plex Mono', monospace;
-}
-
-p {
-    font-family: 'IBM Plex Mono', monospace;
-}
-
+/* for hiding inactive sections */
 .inactive {
   display: none !important;
 }
+
+/* fonts and colors for text*/
+.nav-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.nav-circle:hover {
+    cursor: pointer;
+}
+.nav-text {
+    font-family: 'Nunito', sans-serif;
+    /* Very Dark Blue */
+    color: #01293A;
+}
+.text {
+    font-family: 'Nunito', sans-serif;
+    /* Very Dark Blue */
+    color: #01293A;
+}
+.button {
+    padding: 18px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    /* Button Pink */
+    background-color: #F8C1D8;
+    /* Button Red */
+    color: #E52A2E;
+}
+.caption {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* logo */
+.logo-large {
+    width: 450px;
+}
+.logo-small {
+    width: 220px;
+}
+
+
+/* for accent colors */
+.color-inactive {
+    /* Dots Grey */
+    background-color: #D7D7D7;
+}
+.color-about {
+    background-color: #000000;
+}
+.color-needfinding {
+    /* Blue */
+    background-color: #96BFCA;
+}
+.color-experience {
+    /* Light Pink */
+    background-color: #F8C1D8;
+}
+.color-concept {
+    /* Light Green */
+    background-color: #CFCB9C;
+}
+.color-lowfi {
+    /* Light Blue */
+    background-color: #B6DCE2;
+}
+.color-mediumfi {
+    /* Mustard */
+    background-color: #E5CE88;
+}
+.color-heuristic {
+    /* Orange */
+    background-color: #EBB9A6;
+}
+.color-hifi {
+    /* Dark Pink */
+    background-color: #F9B3BD;
+}
+.color-poster {
+    /* Yellow */
+    background-color: #FADA6A;
+}
+

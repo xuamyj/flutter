@@ -91,5 +91,45 @@ section {
 }
 
 
+/* profile page */
+
+.profile-list {
+    /* parent flex */
+    display:flex;
+    flex-direction: column;
+}
+
+.profile-container {
+    /* parent flex */
+    display:flex;
+}
+
+.profile-role {
+    /* parent flex */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 190px;
+    height: 100px;
+    margin: 5px;
+    padding: 0px 16px;
+}
+
+.profile-card {
+    height: 100px;
+    margin: 5px;
+}
+
+.profile-card img {
+    height: 82px;
+    width: 110px;
+}
+
+.profile-card div {
+    text-align: center;
+}
+
+
 
 

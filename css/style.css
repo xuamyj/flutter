@@ -41,6 +41,8 @@
 }
 .caption {
     font-family: 'Roboto Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 5px;
 }
 
 /* logo */
@@ -51,6 +53,23 @@
     width: 220px;
 }
 
+/* for profile colors */
+.color-cynthia {
+    /* Profile Green */
+    background-color: #8CBEA3;
+}
+.color-chloe {
+    /* Profile Yellow */
+    background-color: #DFBA47;
+}
+.color-amy {
+    /* Profile Pink */
+    background-color: #D4B1A8;
+}
+.color-jenny {
+    /* Profile Blue */
+    background-color: #96BFCA;
+}
 
 /* for accent colors */
 .color-inactive {

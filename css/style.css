@@ -34,6 +34,11 @@
     /* Button Red */
     color: #E52A2E;
 }
+.page {
+    font-family: 'Roboto Mono', monospace;
+    /* Page Grey */
+    color: #656867;
+}
 .caption {
     font-family: 'Roboto Mono', monospace;
 }

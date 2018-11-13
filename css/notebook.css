@@ -84,7 +84,11 @@ section {
     margin: 8px;
 }
 
-
+.page {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
 
 
 

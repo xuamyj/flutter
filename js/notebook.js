@@ -10,7 +10,7 @@ const TEXT_POST = '-text';
 
 
 // -------------------
-// Globals (i'm sorry)
+// Globals (sorry)
 // -------------------
 
 let currSectionId = 'about';
@@ -32,6 +32,7 @@ function chooseSection(sectionId) {
             navCircles[i].classList.remove(COLOR_PRE + INACTIVE);
             navCircles[i].classList.add(COLOR_PRE + sectionId);
         } else {
+            navCircles[i].classList.remove(COLOR_PRE + navCircles[i].id.substring(NAV_PRE.length)); // This is hacky (sorry)
             navCircles[i].classList.remove(COLOR_PRE + currSectionId);
             navCircles[i].classList.add(COLOR_PRE + INACTIVE);
         }
@@ -67,10 +68,34 @@ function onClickNavCircle(event) {
 
     // 1. Figure out the sectionId of the circle that was clicked on
     const currDOM = event.currentTarget;
-    const sectionId = currDOM.id.substring(NAV_PRE.length)
+    const sectionId = currDOM.id.substring(NAV_PRE.length);
 
     // 2. Call `chooseSection()` on that sectionId
     chooseSection(sectionId);
+}
+
+function onEnterNavCircle(event) {
+    // This function should be called when a `.nav-circle` has been hovered on.
+    // It should do the following:
+
+    // 1. Figure out the sectionId of the circle that was clicked on
+    const currDOM = event.currentTarget;
+    const fullId = currDOM.id;
+    const sectionId = fullId.substring(NAV_PRE.length);
+
+    // 2. Color the circle
+    currDOM.classList.remove(COLOR_PRE + INACTIVE);
+    currDOM.classList.add(COLOR_PRE + sectionId);
+
+    // 3. Show the text
+    const textDOM = document.getElementById(fullId + TEXT_POST);
+    textDOM.classList.remove(INACTIVE);
+}
+
+function onLeaveNavCircle(event) {
+    // This function should be called when a `.nav-circle` has stopped being hovered on.
+    // It cheats by calling `chooseSection()`, hehe.
+    chooseSection(currSectionId);
 }
 
 
@@ -81,9 +106,16 @@ function onClickNavCircle(event) {
 // 1. Choose the default section
 chooseSection(currSectionId);
 
-// 2. Set `.nav-circle`s so that when you click on them, they call `onClickNavCircle()`
+// 2. Set `.nav-circle`s so that:
 const navCircles = document.getElementsByClassName('nav-circle');
 for (let i = 0; i < navCircles.length; i++) {
+    // a. When you click on them, they call `onClickNavCircle()`
     navCircles[i].addEventListener('click', onClickNavCircle);
+
+    // b. When you hover on them, they call `onEnterNavCircle()`
+    navCircles[i].addEventListener('mouseenter', onEnterNavCircle);
+
+    // c. When you stop hovering on them, they call `onLeaveNavCircle()`
+    navCircles[i].addEventListener('mouseleave', onLeaveNavCircle);
 }
 

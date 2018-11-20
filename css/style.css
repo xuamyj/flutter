@@ -40,9 +40,16 @@
     color: #656867;
 }
 .caption {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    background-color: #F6F6F6;
+    border-radius: 3px;
 }
 
 /* logo */
@@ -69,6 +76,10 @@
 .color-jenny {
     /* Profile Blue */
     background-color: #96BFCA;
+}
+.color-general {
+    /* General Profile Color White */
+    background-color: #F6F6F6;
 }
 
 /* for accent colors */
@@ -111,4 +122,3 @@
     /* Yellow */
     background-color: #FADA6A;
 }
-

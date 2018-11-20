@@ -96,7 +96,7 @@ section {
 .profile-list {
     /* parent flex */
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .profile-container {
@@ -118,18 +118,17 @@ section {
 
 .profile-card {
     height: 100px;
-    margin: 5px;
-}
-
-.profile-card img {
-    height: 82px;
-    width: 110px;
-}
-
-.profile-card div {
+    width: 80px;
+    margin: 15px;
     text-align: center;
 }
 
-
-
-
+.profile-card img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+/*
+.profile-card div {
+    text-align: center;
+} */

@@ -11,6 +11,10 @@
     height: 20px;
     border-radius: 50%;
 }
+.nav-logo{
+    width: 30px;
+    height: 30px;
+}
 .nav-circle:hover {
     cursor: pointer;
 }

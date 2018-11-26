@@ -43,6 +43,10 @@ nav div {
     margin: 4px 10px;
 }
 
+.nav-logo{
+    margin: 0px 5px;
+}
+
 .nav-text {
     /* parent flex */
     display: flex;

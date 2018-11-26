@@ -37,6 +37,13 @@
 .page {
     font-family: 'Roboto Mono', monospace;
     /* Page Grey */
+    font-size: 12px;
+    color: #656867;
+}
+.pageSignature {
+    font-family: 'Roboto Mono', monospace;
+    /* Page Grey */
+    font-size: 12px;
     color: #656867;
 }
 .caption {

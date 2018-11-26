@@ -90,6 +90,12 @@ section {
     right: 20px;
 }
 
+.pageSignature {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
 
 /* profile page */
 

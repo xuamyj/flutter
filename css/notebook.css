@@ -120,6 +120,7 @@ section {
     height: 100px;
     width: 80px;
     margin: 15px;
+    overflow: hidden;
     text-align: center;
 }
 

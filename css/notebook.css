@@ -38,6 +38,11 @@ body {
     cursor: pointer;
 }
 
+.no-hover {
+    background-color: transparent !important;
+    cursor: auto !important;
+}
+
 nav {
     padding: 5px 0px 0px 0px;
 }

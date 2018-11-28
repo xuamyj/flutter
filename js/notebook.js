@@ -9,6 +9,7 @@ const INACTIVE = 'inactive';
 const TEXT_POST = '-text';
 const BG_ABOUT = 'background-about';
 const BG_GENERAL = 'background-general';
+const NO_HOVER = 'no-hover';
 
 const SECTIONS = {
     0: 'about',
@@ -89,7 +90,23 @@ function chooseSection(sectionName) {
         body.classList.add(BG_GENERAL);
     }
 
-    // 5. Update `SECTIONS[currSectionId]` global variable
+    // 5. Turn off hover effects for:
+    //    - leftPage of first page ('about')
+    //    - rightPage of last page ('poster')
+    const leftPage = document.getElementById('leftpage');
+    const rightPage = document.getElementById('rightpage');
+    if (sectionName == 'about') {
+        leftPage.classList.add(NO_HOVER);
+        rightPage.classList.remove(NO_HOVER);
+    } else if (sectionName == 'poster') {
+        leftPage.classList.remove(NO_HOVER);
+        rightPage.classList.add(NO_HOVER);
+    } else {
+        leftPage.classList.remove(NO_HOVER);
+        rightPage.classList.remove(NO_HOVER);
+    }
+
+    // 6. Update `SECTIONS[currSectionId]` global variable
     currSectionId = REVERSE_SECTIONS[sectionName];
 }
 
@@ -110,6 +127,11 @@ function onClickNavCircle(event) {
 function onClickRightPage(event) {
     // This function should be called when a `#rightpage` is clicked. It should do the following:
 
+    // 0. Don't allow click left on 1st page
+    if (currSectionId == NUM_SECTIONS - 1) {
+        return;
+    }
+
     // 1. Calculate new sectionId
     const sectionId = (currSectionId + 1) % NUM_SECTIONS;
 
@@ -120,8 +142,13 @@ function onClickRightPage(event) {
 function onClickLeftPage(event) {
     // This function should be called when a `#leftpage` is clicked. It should do the following:
 
+    // 0. Don't allow click left on 1st page
+    if (currSectionId == 0) {
+        return;
+    }
+
     // 1. Calculate new sectionId
-    const sectionId = (NUM_SECTIONS + currSectionId - 1) % NUM_SECTIONS;
+    const sectionId = (currSectionId - 1) % NUM_SECTIONS;
 
     // 2. Call `chooseSection()` on that sectionId
     chooseSection(SECTIONS[sectionId]);

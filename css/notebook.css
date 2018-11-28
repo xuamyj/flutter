@@ -85,6 +85,13 @@ section {
     margin: -60px 0px 0px 0px;
 }
 
+.img-left {
+    margin: -208px -160px 0px 0px;
+}
+.img-right {
+    margin: 36px 125px 0px 0px;
+}
+
 .text {
     margin: 8px 110px;
 }

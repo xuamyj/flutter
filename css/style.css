@@ -48,7 +48,7 @@
 .page {
     font-family: 'Roboto Mono', monospace;
     /* Page Grey */
-    font-size: 12px;
+    font-size: 14px;
     color: #656867;
 }
 .pageSignature {
@@ -76,6 +76,18 @@
 }
 .logo-small {
     width: 220px;
+}
+
+/* page images */
+.img-left {
+    width: 250px;
+}
+.img-right {
+    width: 250px;
+}
+.img-center {
+    width: 200px;
+    margin: -150px 0px 0px 0px;
 }
 
 /* for profile colors */

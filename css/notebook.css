@@ -80,6 +80,9 @@ section {
     margin: 8px;
 }
 
+.button-multiple{
+    display: inline-flex;
+}
 .video {
     margin: 8px;
 }

@@ -29,9 +29,10 @@
     color: #01293A;
 }
 .button {
-    padding: 18px 32px;
+    padding: 10px 15px;
     border-radius: 8px;
     text-decoration: none;
+    font-size: 15px;
     font-family: 'Nunito', sans-serif;
     /* Button Pink */
     background-color: #F8C1D8;

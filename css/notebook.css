@@ -99,6 +99,7 @@ section {
 
 .text {
     margin: 8px 110px;
+    text-align: center;
 }
 
 .button {

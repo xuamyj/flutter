@@ -39,6 +39,12 @@
     /* Button Red */
     color: #E52A2E;
 }
+.button:hover {
+    /* Button Pink */
+    background-color: #E52A2E;
+    /* Button Red */
+    color: #F8C1D8;
+}
 .page {
     font-family: 'Roboto Mono', monospace;
     /* Page Grey */
@@ -92,6 +98,16 @@
 .color-general {
     /* General Profile Color White */
     background-color: #F6F6F6;
+}
+
+/* for background images */
+.background-general {
+    background-image: url("../images/back3.png");
+}
+
+.background-about {
+    background-image: url("../images/back4.png");
+
 }
 
 /* for accent colors */

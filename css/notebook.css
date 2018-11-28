@@ -9,11 +9,10 @@ body {
     /* parent flex */
     display: flex;
     flex-direction: row;
-    background-image: url("../images/back2.png");
     background-size: cover;
 
     margin: 0px;
-    padding: 8px 0px 0px 0px;
+    padding: 0px;
 
     /* for vertical centering */
     height: 100%;
@@ -33,6 +32,15 @@ body {
 
 
 /* left page */
+
+#leftpage:hover {
+    background-color: #00000011;
+    cursor: pointer;
+}
+
+nav {
+    padding: 5px 0px 0px 0px;
+}
 
 nav div {
     /* parent flex */
@@ -56,6 +64,11 @@ nav div {
 
 
 /* right page */
+
+#rightpage:hover {
+    background-color: #00000011;
+    cursor: pointer;
+}
 
 section {
     /* parent flex */

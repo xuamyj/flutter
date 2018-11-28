@@ -91,7 +91,7 @@ section {
 }
 
 .img-left {
-    margin: -208px -160px 0px 0px;
+    margin: -250px -160px 0px 0px;
 }
 
 .img-right {
@@ -110,19 +110,37 @@ section {
 }
 
 .button {
-    margin: 8px;
+    margin-left: 8px;
 }
 
 .button-multiple{
     display: inline-flex;
 }
 
-.video {
-    margin: 8px;
+.video{
+    margin-left: 2vw;
+    margin-top: -135px;
+    position: relative;
+    width: 40vw;
+    height: 0;
+    padding-bottom: 51%;
+}
+
+.video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0;
 }
 
 .prototype {
-    margin: 8px;
+    margin-top: -250px;
+    margin-left: 12vw;
+}
+
+.prototype iframe {
+    width: 25vw;
+    height: 80vh;
 }
 
 .page {
@@ -164,7 +182,7 @@ section {
 }
 
 .profile-card {
-    height: 100px;
+    height: 90px;
     width: 80px;
     margin: 15px;
     text-align: center;

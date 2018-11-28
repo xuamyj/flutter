@@ -34,16 +34,9 @@
     text-decoration: none;
     font-size: 15px;
     font-family: 'Nunito', sans-serif;
-    /* Button Pink */
-    background-color: #F8C1D8;
-    /* Button Red */
-    color: #E52A2E;
 }
 .button:hover {
-    /* Button Pink */
-    background-color: #E52A2E;
-    /* Button Red */
-    color: #F8C1D8;
+    cursor: pointer;
 }
 .page {
     font-family: 'Roboto Mono', monospace;
@@ -159,4 +152,81 @@
 .color-poster {
     /* Yellow */
     background-color: #FADA6A;
+}
+
+/* for button text colors */
+.color-text-needfinding {
+    /* Button Text Blue */
+    color: #122024;
+}
+.color-text-experience {
+    /* Button Text Light Pink */
+    color: #A91353;
+}
+.color-text-concept {
+    /* Button Text Light Green */
+    color: #494623;
+}
+.color-text-lowfi {
+    /* Button Text Light Blue */
+    color: #224D54;
+}
+.color-text-mediumfi {
+    /* Button Text Mustard */
+    color: #554513;
+}
+.color-text-heuristic {
+    /* Button Text Orange */
+    color: #602B16;
+}
+.color-text-hifi {
+    /* Button Text Dark Pink */
+    color: #790919;
+}
+.color-text-poster {
+    /* Button Text Yellow */
+    color: #6C5604;
+}
+
+/* for button text colors, when hovering */
+/* this is a bit hacky! sorry */
+.color-text-needfinding:hover {
+    /* Button Text Blue */
+    background-color: #122024;
+    color: #96BFCA;
+}
+.color-text-experience:hover {
+    /* Button Text Light Pink */
+    background-color: #A91353;
+    color: #F8C1D8;
+}
+.color-text-concept:hover {
+    /* Button Text Light Green */
+    background-color: #494623;
+    color: #CFCB9C;
+}
+.color-text-lowfi:hover {
+    /* Button Text Light Blue */
+    background-color: #224D54;
+    color: #B6DCE2;
+}
+.color-text-mediumfi:hover {
+    /* Button Text Mustard */
+    background-color: #554513;
+    color: #E5CE88;
+}
+.color-text-heuristic:hover {
+    /* Button Text Orange */
+    background-color: #602B16;
+    color: #EBB9A6;
+}
+.color-text-hifi:hover {
+    /* Button Text Dark Pink */
+    background-color: #790919;
+    color: #F9B3BD;
+}
+.color-text-poster:hover {
+    /* Button Text Yellow */
+    background-color: #6C5604;
+    color: #FADA6A;
 }

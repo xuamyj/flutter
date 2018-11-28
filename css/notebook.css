@@ -93,12 +93,19 @@ section {
 .img-left {
     margin: -208px -160px 0px 0px;
 }
+
 .img-right {
     margin: 36px 125px 0px 0px;
 }
 
 .text {
     margin: 8px 110px;
+}
+
+.caption {
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {
@@ -108,6 +115,7 @@ section {
 .button-multiple{
     display: inline-flex;
 }
+
 .video {
     margin: 8px;
 }

@@ -9,6 +9,7 @@ const INACTIVE = 'inactive';
 const TEXT_POST = '-text';
 const BG_ABOUT = 'background-about';
 const BG_GENERAL = 'background-general';
+const BG_HIFI = 'background-hifi';
 const NO_HOVER = 'no-hover';
 
 const SECTIONS = {
@@ -85,8 +86,12 @@ function chooseSection(sectionName) {
     if (sectionName == 'about') {
         body.classList.remove(BG_GENERAL);
         body.classList.add(BG_ABOUT);
+    } else if (sectionName == 'hifi') {
+        body.classList.remove(BG_GENERAL);
+        body.classList.add(BG_HIFI);
     } else {
         body.classList.remove(BG_ABOUT);
+        body.classList.remove(BG_HIFI);
         body.classList.add(BG_GENERAL);
     }
 
@@ -212,9 +217,3 @@ for (let i = 0; i < links.length; i++) {
         event.stopPropagation();
     });
 }
-
-
-
-
-
-

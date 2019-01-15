@@ -8,8 +8,8 @@ const SECTION_PRE = 'section-';
 const INACTIVE = 'inactive';
 const TEXT_POST = '-text';
 const BG_ABOUT = 'background-about';
-const BG_GENERAL = 'background-general';
 const BG_HIFI = 'background-hifi';
+const BG_GENERAL = 'background-general';
 const NO_HOVER = 'no-hover';
 
 const SECTIONS = {
@@ -98,18 +98,18 @@ function chooseSection(sectionName) {
     // 5. Turn off hover effects for:
     //    - leftPage of first page ('about')
     //    - rightPage of last page ('poster')
-    const leftPage = document.getElementById('leftpage');
-    const rightPage = document.getElementById('rightpage');
-    if (sectionName == 'about') {
-        leftPage.classList.add(NO_HOVER);
-        rightPage.classList.remove(NO_HOVER);
-    } else if (sectionName == 'poster') {
-        leftPage.classList.remove(NO_HOVER);
-        rightPage.classList.add(NO_HOVER);
-    } else {
-        leftPage.classList.remove(NO_HOVER);
-        rightPage.classList.remove(NO_HOVER);
-    }
+    // const leftPage = document.getElementById('leftpage');
+    // const rightPage = document.getElementById('rightpage');
+    // if (sectionName == 'about') {
+    //     leftPage.classList.add(NO_HOVER);
+    //     rightPage.classList.remove(NO_HOVER);
+    // } else if (sectionName == 'poster') {
+    //     leftPage.classList.remove(NO_HOVER);
+    //     rightPage.classList.add(NO_HOVER);
+    // } else {
+    //     leftPage.classList.remove(NO_HOVER);
+    //     rightPage.classList.remove(NO_HOVER);
+    // }
 
     // 6. Update `SECTIONS[currSectionId]` global variable
     currSectionId = REVERSE_SECTIONS[sectionName];
@@ -129,35 +129,43 @@ function onClickNavCircle(event) {
     chooseSection(sectionId);
 }
 
-function onClickRightPage(event) {
-    // This function should be called when a `#rightpage` is clicked. It should do the following:
+function onScroll(event){
+  const currDOM = event.currentTarget;
+  const sectionId = currDOM.id.substring(NAV_PRE.length);
 
-    // 0. Don't allow click left on 1st page
-    if (currSectionId == NUM_SECTIONS - 1) {
-        return;
-    }
-
-    // 1. Calculate new sectionId
-    const sectionId = (currSectionId + 1) % NUM_SECTIONS;
-
-    // 2. Call `chooseSection()` on that sectionId
-    chooseSection(SECTIONS[sectionId]);
+  // 2. Call `chooseSection()` on that sectionId
+  chooseSection(sectionId)
 }
 
-function onClickLeftPage(event) {
-    // This function should be called when a `#leftpage` is clicked. It should do the following:
+// function onClickRightPage(event) {
+//     // This function should be called when a `#rightpage` is clicked. It should do the following:
+//
+//     // 0. Don't allow click left on 1st page
+//     if (currSectionId == NUM_SECTIONS - 1) {
+//         return;
+//     }
+//
+//     // 1. Calculate new sectionId
+//     const sectionId = (currSectionId + 1) % NUM_SECTIONS;
+//
+//     // 2. Call `chooseSection()` on that sectionId
+//     chooseSection(SECTIONS[sectionId]);
+// }
 
-    // 0. Don't allow click left on 1st page
-    if (currSectionId == 0) {
-        return;
-    }
-
-    // 1. Calculate new sectionId
-    const sectionId = (currSectionId - 1) % NUM_SECTIONS;
-
-    // 2. Call `chooseSection()` on that sectionId
-    chooseSection(SECTIONS[sectionId]);
-}
+// function onClickLeftPage(event) {
+//     // This function should be called when a `#leftpage` is clicked. It should do the following:
+//
+//     // 0. Don't allow click left on 1st page
+//     if (currSectionId == 0) {
+//         return;
+//     }
+//
+//     // 1. Calculate new sectionId
+//     const sectionId = (currSectionId - 1) % NUM_SECTIONS;
+//
+//     // 2. Call `chooseSection()` on that sectionId
+//     chooseSection(SECTIONS[sectionId]);
+// }
 
 function onEnterNavCircle(event) {
     // This function should be called when a `.nav-circle` has been hovered on.
@@ -196,6 +204,7 @@ const navCircles = document.getElementsByClassName('nav-circle');
 for (let i = 0; i < navCircles.length; i++) {
     // a. When you click on them, they call `onClickNavCircle()`
     navCircles[i].addEventListener('click', onClickNavCircle);
+    window.addEventListener('scroll', onScroll);
 
     // b. When you hover on them, they call `onEnterNavCircle()`
     navCircles[i].addEventListener('mouseenter', onEnterNavCircle);
@@ -205,15 +214,15 @@ for (let i = 0; i < navCircles.length; i++) {
 }
 
 // 3. Set `#rightpage` and `#leftpage` to have respective listeners
-const rightPage = document.getElementById('rightpage');
-rightPage.addEventListener('click', onClickRightPage);
-const leftPage = document.getElementById('leftpage');
-leftPage.addEventListener('click', onClickLeftPage);
+// const rightPage = document.getElementById('rightpage');
+// rightPage.addEventListener('click', onClickRightPage);
+// const leftPage = document.getElementById('leftpage');
+// leftPage.addEventListener('click', onClickLeftPage);
 
 // 4. Set links to not call onClickRightPage
-const links = document.getElementsByTagName('a');
-for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', (event) => {
-        event.stopPropagation();
-    });
-}
+// const links = document.getElementsByTagName('a');
+// for (let i = 0; i < links.length; i++) {
+//     links[i].addEventListener('click', (event) => {
+//         event.stopPropagation();
+//     });
+// }

@@ -1,3 +1,203 @@
+/* spacing and interactions */
+
+html {
+    /* for vertical centering */
+    height: 100%;
+}
+
+body {
+    /* parent flex */
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+
+    margin: 0px;
+    padding: 0px;
+
+    /* for vertical centering */
+    height: 100%;
+}
+
+#leftpage {
+    /* child flex */
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+#rightpage {
+    /* child flex */
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+
+/* left page */
+
+/* #leftpage:hover {
+    background-color: #00000011;
+    cursor: pointer;
+} */
+
+.no-hover {
+    background-color: transparent !important;
+    cursor: auto !important;
+}
+
+nav {
+    padding: 5px 0px 0px 0px;
+}
+
+nav div {
+    /* parent flex */
+    display: flex;
+}
+
+.nav-circle {
+    margin: 4px 10px;
+}
+
+.nav-logo{
+    margin: 0px 5px;
+}
+
+.nav-text {
+    /* parent flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* right page */
+
+/* #rightpage:hover {
+    background-color: #00000011;
+    cursor: pointer;
+} */
+
+section {
+    /* parent flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* for vertical centering */
+    height: 100%;
+}
+
+.logo-small {
+    margin: -60px 0px 0px 0px;
+}
+
+.img-left {
+    margin: -250px -160px 0px 0px;
+}
+
+.img-right {
+    margin: 36px 125px 0px 0px;
+}
+
+.text {
+    margin: 8px 110px;
+    text-align: center;
+}
+
+.caption {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    margin-left: 8px;
+}
+
+.button-multiple{
+    display: inline-flex;
+}
+
+.video{
+    margin-left: 2vw;
+    margin-top: -130px;
+    position: relative;
+    width: 40vw;
+    height: 0;
+    padding-bottom: 51%;
+}
+
+.video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0;
+}
+
+.prototype {
+    margin-top: -250px;
+    margin-left: 12vw;
+}
+
+.prototype iframe {
+    width: 25vw;
+    height: 80vh;
+}
+
+.page {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.pageSignature {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+
+/* profile page */
+
+.profile-list {
+    /* parent flex */
+    display:flex;
+    flex-direction: row;
+}
+
+.profile-container {
+    /* parent flex */
+    display:flex;
+}
+
+.profile-role {
+    /* parent flex */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 190px;
+    height: 100px;
+    margin: 5px;
+    padding: 0px 16px;
+}
+
+.profile-card {
+    height: 90px;
+    width: 80px;
+    margin: 15px;
+    text-align: center;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+}
+/*
+.profile-card div {
+    text-align: center;
+} */
 // ---------
 // Constants
 // ---------
@@ -226,3 +426,4 @@ for (let i = 0; i < navCircles.length; i++) {
 //         event.stopPropagation();
 //     });
 // }
+

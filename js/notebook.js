@@ -129,14 +129,6 @@ function onClickNavCircle(event) {
     chooseSection(sectionId);
 }
 
-function onScroll(event){
-  const currDOM = event.currentTarget;
-  const sectionId = currDOM.id.substring(NAV_PRE.length);
-
-  // 2. Call `chooseSection()` on that sectionId
-  chooseSection(sectionId)
-}
-
 // function onClickRightPage(event) {
 //     // This function should be called when a `#rightpage` is clicked. It should do the following:
 //

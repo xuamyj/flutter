@@ -129,13 +129,21 @@ function onClickNavCircle(event) {
     chooseSection(sectionId);
 }
 
-function onScroll(event){
-  const currDOM = event.currentTarget;
-  const sectionId = currDOM.id.substring(NAV_PRE.length);
-
-  // 2. Call `chooseSection()` on that sectionId
-  chooseSection(sectionId)
-}
+// window.addEventListener('scroll', function(e){
+// //   const currDOM = event.currentTarget;
+// //   const currSectionId = currDOM.id.substring(NAV_PRE.length);
+//
+//   // 0. Don't allow click left on 1st page
+//   // if (currSectionId == NUM_SECTIONS - 1) {
+//   //     return;
+//   // }
+//
+//   // 1. Calculate new sectionId
+//   const sectionId = (currSectionId + 1) % NUM_SECTIONS;
+//
+//   // 2. Call `chooseSection()` on that sectionId
+//   chooseSection(SECTIONS[sectionId]);
+// }
 
 // function onClickRightPage(event) {
 //     // This function should be called when a `#rightpage` is clicked. It should do the following:
@@ -204,7 +212,6 @@ const navCircles = document.getElementsByClassName('nav-circle');
 for (let i = 0; i < navCircles.length; i++) {
     // a. When you click on them, they call `onClickNavCircle()`
     navCircles[i].addEventListener('click', onClickNavCircle);
-    window.addEventListener('scroll', onScroll);
 
     // b. When you hover on them, they call `onEnterNavCircle()`
     navCircles[i].addEventListener('mouseenter', onEnterNavCircle);
@@ -218,7 +225,7 @@ for (let i = 0; i < navCircles.length; i++) {
 // rightPage.addEventListener('click', onClickRightPage);
 // const leftPage = document.getElementById('leftpage');
 // leftPage.addEventListener('click', onClickLeftPage);
-
+//
 // 4. Set links to not call onClickRightPage
 // const links = document.getElementsByTagName('a');
 // for (let i = 0; i < links.length; i++) {

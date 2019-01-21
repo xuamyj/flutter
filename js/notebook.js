@@ -129,22 +129,6 @@ function onClickNavCircle(event) {
     chooseSection(sectionId);
 }
 
-// window.addEventListener('scroll', function(e){
-// //   const currDOM = event.currentTarget;
-// //   const currSectionId = currDOM.id.substring(NAV_PRE.length);
-//
-//   // 0. Don't allow click left on 1st page
-//   // if (currSectionId == NUM_SECTIONS - 1) {
-//   //     return;
-//   // }
-//
-//   // 1. Calculate new sectionId
-//   const sectionId = (currSectionId + 1) % NUM_SECTIONS;
-//
-//   // 2. Call `chooseSection()` on that sectionId
-//   chooseSection(SECTIONS[sectionId]);
-// }
-
 // function onClickRightPage(event) {
 //     // This function should be called when a `#rightpage` is clicked. It should do the following:
 //
